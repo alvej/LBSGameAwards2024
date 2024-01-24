@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed;
     public KeyCode leftKey = KeyCode.A;
     public KeyCode rightKey = KeyCode.D;
     public KeyCode upKey = KeyCode.W;
@@ -43,6 +43,7 @@ public class Movement : MonoBehaviour
         }
 
         rigidBody.velocity = input.normalized * speed;
+        Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
         
     }
 }
