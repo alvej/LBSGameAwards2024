@@ -14,6 +14,8 @@ public class GameState : MonoBehaviour
     void Start()
     {
 
+        infoText.text = "";
+
     }
 
     // Update is called once per frame
