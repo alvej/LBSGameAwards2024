@@ -21,6 +21,7 @@ public class DialogueTeacher : MonoBehaviour
 
     void Start()
     {
+        gameState.teacherTalkText.text = "";
         textComponent.text = string.Empty;
     }
 
@@ -70,6 +71,7 @@ public class DialogueTeacher : MonoBehaviour
 
     void StartDialogue()
     {
+        dialogue++;
         dialogueSquare.SetActive(true);
         index = 0;
         StartCoroutine(TypeLine());
