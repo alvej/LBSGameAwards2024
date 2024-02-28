@@ -1218,8 +1218,9 @@ GameObject:
   m_Component:
   - component: {fileID: 831331449}
   - component: {fileID: 831331450}
+  - component: {fileID: 831331451}
   m_Layer: 0
-  m_Name: Info
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1254,9 +1255,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1078209250}
   lines:
-  - Find an empty seat and wait for me to speak up.
+  - Find yourself an empty seat and wait for me to speak up.
   - What are you standing here for? Off you go!
   waitSeconds: 0.025
+  dialogueSquare: {fileID: 72977864}
+  dialogue: 0
+  inDialogue: 0
+  gameState: {fileID: 1432318283}
+--- !u!114 &831331451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831331448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be6ba9472df0f943bd9fd3f39cc5a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 199518601}
+  lines:
+  - Alright class, listen up!
+  - I SAID LISTEN!
+  - I will be going through the most important rules within the school.
+  - First of, always listen to whatever the teacher tells you.
+  - Secondly, no music or loud noises as that will disturb our education.
+  - And it's ofcoarse not tolerated to doodle or destroy anything.
+  - And the rest of the 1842 rules you have to follow are listed in the school app.
+  waitSeconds: 0
   dialogueSquare: {fileID: 72977864}
   dialogue: 0
   inDialogue: 0
@@ -1617,7 +1644,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5281044617800819354, guid: b022d54ae6a30384dafdb196c61922c0, type: 3}
   m_PrefabInstance: {fileID: 3966744786133669006}
   m_PrefabAsset: {fileID: 0}
---- !u!68 &1580692540
+--- !u!68 &1580692542
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1652,15 +1679,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -4.788188, y: -5.127228}
-  - {x: -1.6823759, y: -5.0923367}
-  - {x: -1.6811495, y: -5.4030657}
-  - {x: 2.0653982, y: -5.4396677}
-  - {x: 2.0576239, y: -5.0982304}
-  - {x: 4.8178377, y: -5.061796}
-  - {x: 4.685342, y: -4.9832067}
-  - {x: -4.6702843, y: -5.018362}
-  - {x: -4.858879, y: -5.029024}
+  - {x: 0.41357797, y: -0.4915279}
+  - {x: -0.44766364, y: -0.4793505}
+  - {x: -0.39515853, y: -0.33147776}
+  - {x: 0.38348705, y: -0.33741826}
+  - {x: 0.4166804, y: -0.4651549}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2271,6 +2294,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7059140286456875137, guid: b022d54ae6a30384dafdb196c61922c0, type: 3}
+      propertyPath: movement
+      value: 
+      objectReference: {fileID: 238149383}
+    - target: {fileID: 7059140286456875137, guid: b022d54ae6a30384dafdb196c61922c0, type: 3}
+      propertyPath: gameState
+      value: 
+      objectReference: {fileID: 1432318283}
     - target: {fileID: 7415861909368267390, guid: b022d54ae6a30384dafdb196c61922c0, type: 3}
       propertyPath: m_Name
       value: EmptyBenchPlaceholder
@@ -2281,7 +2312,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7415861909368267390, guid: b022d54ae6a30384dafdb196c61922c0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1580692540}
+      addedObject: {fileID: 1580692542}
   m_SourcePrefab: {fileID: 100100000, guid: b022d54ae6a30384dafdb196c61922c0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

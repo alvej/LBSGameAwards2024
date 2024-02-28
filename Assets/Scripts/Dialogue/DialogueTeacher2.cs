@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class DialogueTeacher : MonoBehaviour
+public class DialogueTeacher2 : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -17,6 +17,14 @@ public class DialogueTeacher : MonoBehaviour
 
     public GameState gameState;
     private bool changedText = false;
+
+
+    DialogueTeacher1 dialogue1;
+
+    private void Awake()
+    {
+        //referenca dialog1 o så fixar du så det blir detta scripts dialog.
+    }
 
 
     void Start()
