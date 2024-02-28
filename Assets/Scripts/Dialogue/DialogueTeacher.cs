@@ -33,15 +33,19 @@ public class DialogueTeacher : MonoBehaviour
 
         if (Physics2D.OverlapCircle(transform.position, 1f, LayerMask.GetMask("Player")))
         {
-            if (changedText == false)
+            if (changedText == false && dialogue == 0)
             {
                 changedText = true;
-                gameState.teacherTalkText.text = "Press E to talk to the Teacher";
+                gameState.teacherTalkText.text = "Press E to talk to Teacher";
             }
 
-            if (Input.GetKeyDown(KeyCode.E) && dialogue == 0 && inDialogue == false)
+            if (Input.GetKeyDown(KeyCode.E) && inDialogue == false)
             {
-                StartDialogue();
+                if (dialogue == 0)
+                {
+                    StartDialogue();
+                }
+
                 inDialogue = true;
             }
         }
@@ -69,6 +73,8 @@ public class DialogueTeacher : MonoBehaviour
         }
     }
 
+  
+
     void StartDialogue()
     {
         dialogue++;
@@ -76,6 +82,7 @@ public class DialogueTeacher : MonoBehaviour
         index = 0;
         StartCoroutine(TypeLine());
     }
+
 
     void NextLine()
     {
@@ -89,6 +96,7 @@ public class DialogueTeacher : MonoBehaviour
         {
             inDialogue = false;
             dialogueSquare.SetActive(false);
+            gameState.teacherTalkText.text = "";
         }
     }
 
