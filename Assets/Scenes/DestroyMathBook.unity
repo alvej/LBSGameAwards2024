@@ -613,6 +613,7 @@ MonoBehaviour:
   pen: {fileID: 2038508062}
   drawPrefab: {fileID: 1691044124}
   text: {fileID: 726057825}
+  mathbookColored: {fileID: 21300000, guid: 6cda9dcc938fbc9498d4a45a1d6e889f, type: 3}
 --- !u!1 &1691044124
 GameObject:
   m_ObjectHideFlags: 0
