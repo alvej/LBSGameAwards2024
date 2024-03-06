@@ -23,14 +23,13 @@ public class DialogueTeacher2 : MonoBehaviour
 
     private void Awake()
     {
-        //referenca dialog1 o så fixar du så det blir detta scripts dialog.
+
     }
 
 
     void Start()
     {
         gameState = FindObjectOfType<GameState>();
-        gameState.teacherTalkText.text = "";
         textComponent.text = string.Empty;
     }
 
@@ -40,35 +39,7 @@ public class DialogueTeacher2 : MonoBehaviour
     void Update()
     {
 
-        if (Physics2D.OverlapCircle(transform.position, 1f, LayerMask.GetMask("Player")))
-        {
-            if (changedText == false && dialogue == 0)
-            {
-                changedText = true;
-                gameState.teacherTalkText.text = "Press E to talk to Teacher";
-            }
-
-            if (Input.GetKeyDown(KeyCode.E) && inDialogue == false)
-            {
-                if (dialogue == 0)
-                {
-                    StartDialogue();
-                }
-
-                inDialogue = true;
-            }
-        }
-        else
-        {
-            if (changedText == true)
-            {
-                changedText = false;
-                gameState.teacherTalkText.text = "";
-            }
-        }
-
-
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && inDialogue == true)
         {
             if (textComponent.text == lines[index])
             {
@@ -84,8 +55,12 @@ public class DialogueTeacher2 : MonoBehaviour
 
   
 
-    void StartDialogue()
+    public void StartDialogue()
     {
+        gameState.infoText.text = "";
+
+        inDialogue = true;
+
         dialogue++;
         dialogueSquare.SetActive(true);
         index = 0;
@@ -95,7 +70,7 @@ public class DialogueTeacher2 : MonoBehaviour
 
     void NextLine()
     {
-        if (index < lines.Length - 1)
+        if (index < 6)
         {
             index++;
             textComponent.text = string.Empty;
@@ -105,7 +80,7 @@ public class DialogueTeacher2 : MonoBehaviour
         {
             inDialogue = false;
             dialogueSquare.SetActive(false);
-            gameState.teacherTalkText.text = "";
+            gameState.infoText.text = "";
         }
     }
 

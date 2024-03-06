@@ -12,10 +12,13 @@ public class Bench : MonoBehaviour
     public GameState gameState;
     private bool changedText = false;
 
+    public DialogueTeacher2 dialogue;
     public Movement movement;
 
     void Awake()
     {
+        dialogue = FindObjectOfType<DialogueTeacher2>();
+        gameState = FindObjectOfType<GameState>();
         GameObject.FindWithTag("Player").GetComponent<Movement>();
     }
 
@@ -29,15 +32,20 @@ public class Bench : MonoBehaviour
             {
                 changedText = true;
                 gameState.infoText.text = "Press E to sit down";
+
             }
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && seated == false)
             {
                 seated = true;
+                Debug.Log("ye");
+
+                dialogue.StartDialogue();
                 gameState.infoText.text = "";
 
                 //Transition anim så att man sätter sig ner.
             }
+
 
         }
         else

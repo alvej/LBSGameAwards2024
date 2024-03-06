@@ -9,7 +9,9 @@ public class GameState : MonoBehaviour
 
 
     public TextMeshProUGUI infoText;
-    public TextMeshProUGUI teacherTalkText;
+
+    public GameObject dialogueSquare;
+    public TextMeshProUGUI teacherDialogueText;
 
     // Start is called before the first frame update
     void Start()

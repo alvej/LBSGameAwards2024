@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: {fileID: 0}
-  changeTo: 
+  changeTo: MainClassroom
 --- !u!4 &463953084
 Transform:
   m_ObjectHideFlags: 0
