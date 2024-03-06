@@ -15,12 +15,13 @@ public class DialogueTeacher1 : MonoBehaviour
     public int dialogue = 0;
     public bool inDialogue = false;
 
-    public GameState gameState;
+    private GameState gameState;
     private bool changedText = false;
 
 
     void Start()
     {
+        gameState = FindObjectOfType<GameState>();
         gameState.teacherTalkText.text = "";
         textComponent.text = string.Empty;
     }
