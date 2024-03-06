@@ -98,7 +98,6 @@ public class DialogueTeacher1 : MonoBehaviour
             inDialogue = false;
             dialogueSquare.SetActive(false);
             gameState.teacherTalkText.text = "";
-            textComponent.text = "";
         }
     }
 
