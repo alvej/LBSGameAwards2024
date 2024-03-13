@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DestroyMathBook.unity
     guid: 6fa0bf339f781ea4a84d38dfc59b8db9
+  - enabled: 1
+    path: Assets/Scenes/Toilet.unity
+    guid: 6d4016c5a21cde449b67201a6f6b1256
   m_configObjects: {}

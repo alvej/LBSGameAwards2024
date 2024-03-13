@@ -1095,7 +1095,6 @@ MonoBehaviour:
   dialogueSquare: {fileID: 72977864}
   dialogue: 0
   inDialogue: 0
-  gameState: {fileID: 0}
 --- !u!1 &518982801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,7 +1370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f0b30fdfd50dd45b19bc41bcc9add6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 1078209250}
   lines:
   - I saw you missbehave in my class today, you were punching holes in the mathbook...
   - This goes against rule 3.
@@ -1381,7 +1379,6 @@ MonoBehaviour:
   dialogueSquare: {fileID: 72977864}
   dialogue: 0
   inDialogue: 0
-  gameState: {fileID: 0}
 --- !u!1 &964054490
 GameObject:
   m_ObjectHideFlags: 0

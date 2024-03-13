@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public KeyCode rightKey = KeyCode.D;
     public KeyCode upKey = KeyCode.W;
     public KeyCode downKey = KeyCode.S;
+    public bool changeCamera = true;
 
 
     private Rigidbody2D rigidBody;
@@ -43,7 +44,9 @@ public class Movement : MonoBehaviour
         }
 
         rigidBody.velocity = input.normalized * speed;
-        Camera.main.transform.position = new Vector3(transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
-        
+        if (changeCamera)
+        {
+            Camera.main.transform.position = new Vector3(transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
+        }
     }
 }
