@@ -44,6 +44,7 @@ public class Movement : MonoBehaviour
         }
 
         rigidBody.velocity = input.normalized * speed;
+
         if (changeCamera)
         {
             Camera.main.transform.position = new Vector3(transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
