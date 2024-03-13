@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueTeacher2 : MonoBehaviour
 {
@@ -81,6 +82,7 @@ public class DialogueTeacher2 : MonoBehaviour
             inDialogue = false;
             dialogueSquare.SetActive(false);
             gameState.infoText.text = "";
+            SceneManager.LoadScene("DestroyMathBook");
         }
     }
 

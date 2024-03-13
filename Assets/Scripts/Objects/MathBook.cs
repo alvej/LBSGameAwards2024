@@ -54,6 +54,6 @@ public class Pen : MonoBehaviour
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Corridor");
     }
 }
