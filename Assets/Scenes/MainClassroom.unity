@@ -957,6 +957,8 @@ MonoBehaviour:
   - Secondly, no music or loud noises as that will disturb our education.
   - And it's ofcourse not tolerated to doodle or destroy anything.
   - And the rest of the 1842 rules you have to follow are listed in the school app.
+  - Now..
+  - DO YOUR MATH!
   waitSeconds: 0.025
   dialogueSquare: {fileID: 72977864}
   dialogue: 0
@@ -1175,7 +1177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f0b30fdfd50dd45b19bc41bcc9add6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 1078209250}
   lines:
   - Find yourself an empty seat and wait for me to speak up.
   - What are you standing here for? Off you go!
@@ -2143,6 +2144,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7059140286456875137, guid: b022d54ae6a30384dafdb196c61922c0, type: 3}
+      propertyPath: check
+      value: 
+      objectReference: {fileID: 831331450}
     - target: {fileID: 7059140286456875137, guid: b022d54ae6a30384dafdb196c61922c0, type: 3}
       propertyPath: dialogue
       value: 

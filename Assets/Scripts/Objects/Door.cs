@@ -24,6 +24,7 @@ public class Door : MonoBehaviour
             {
                 Debug.Log("FUUDUD");
                 SceneManager.LoadScene(changeTo);
+                gameState.infoText.text = "";
             }
 
             if (changedText == false)

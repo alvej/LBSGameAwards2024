@@ -94,6 +94,7 @@ public class DialogueTeacher1 : MonoBehaviour
         }
         else
         {
+            dialogue++;
             inDialogue = false;
             gameState.dialogueSquare.SetActive(false);
             gameState.infoText.text = "";

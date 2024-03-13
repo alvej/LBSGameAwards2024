@@ -71,7 +71,7 @@ public class DialogueTeacher2 : MonoBehaviour
 
     void NextLine()
     {
-        if (index < 6)
+        if (index < 8)
         {
             index++;
             textComponent.text = string.Empty;

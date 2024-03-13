@@ -12,11 +12,13 @@ public class Bench : MonoBehaviour
     public GameState gameState;
     private bool changedText = false;
 
+    public DialogueTeacher1 check;
     public DialogueTeacher2 dialogue;
     public Movement movement;
 
     void Awake()
     {
+        check = FindObjectOfType<DialogueTeacher1>();
         dialogue = FindObjectOfType<DialogueTeacher2>();
         gameState = FindObjectOfType<GameState>();
         GameObject.FindWithTag("Player").GetComponent<Movement>();
@@ -26,7 +28,7 @@ public class Bench : MonoBehaviour
     void Update()
     {
 
-        if (Physics2D.OverlapCircle(transform.position, 1.5f, LayerMask.GetMask("Player")))
+        if (Physics2D.OverlapCircle(transform.position, 1.5f, LayerMask.GetMask("Player")) && check.dialogue >= 1)
         {
             if (changedText == false && seated == false)
             {
