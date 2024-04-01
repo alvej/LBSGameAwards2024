@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     public KeyCode downKey = KeyCode.S;
     public bool changeCamera = true;
 
+    public Animator anim;
 
     private Rigidbody2D rigidBody;
 
@@ -29,18 +30,47 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(leftKey))
         {
             input.x -= 1;
+
+            Debug.Log("hej");
+
+            anim.SetBool("isWalkingLeft", true);
         }
+        else
+        {
+            anim.SetBool("isWalkingLeft", false);
+        }
+        
         if (Input.GetKey(rightKey))
         {
             input.x += 1;
+
+            anim.SetBool("isWalkingRight", true);
         }
+        else
+        {
+            anim.SetBool("isWalkingRight", false);
+        }
+
         if (Input.GetKey(upKey))
         {
             input.y += 1;
+
+            anim.SetBool("isWalkingFront", true);
         }
+        else
+        {
+            anim.SetBool("isWalkingFront", false);
+        }
+
         if (Input.GetKey(downKey))
         {
             input.y -= 1;
+
+            anim.SetBool("isWalkingBack", true);
+        }
+        else
+        {
+            anim.SetBool("isWalkingBack", false);
         }
 
         rigidBody.velocity = input.normalized * speed;

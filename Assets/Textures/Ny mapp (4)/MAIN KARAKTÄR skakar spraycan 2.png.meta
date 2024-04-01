@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1e17a1a84d618641b6e46721078e2be
+guid: c449b3dfd6932604ebda76627a003a37
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_0
+      name: "MAIN KARAKT\xC4R skakar spraycan 2_0"
       rect:
         serializedVersion: 2
-        x: 56
-        y: 924
-        width: 1099
-        height: 1444
+        x: 0
+        y: 244
+        width: 840
+        height: 2016
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0168a3854bfa69b4dbfa9f6ffdc95d50
-      internalID: -143432246
+      spriteID: faadb11879084f44882ed6949d75adb8
+      internalID: -627263195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_1
+      name: "MAIN KARAKT\xC4R skakar spraycan 2_1"
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 923
-        width: 1097
-        height: 1437
+        x: 868
+        y: 212
+        width: 882
+        height: 2015
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458420c9d3d70ef44a8a94b998486a6e
-      internalID: -1382862076
+      spriteID: 6d66d15e82aa7c44db76a4540c377567
+      internalID: -1976428889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_2
+      name: "MAIN KARAKT\xC4R skakar spraycan 2_2"
       rect:
         serializedVersion: 2
-        x: 2375
-        y: 924
-        width: 1098
-        height: 1444
+        x: 1753
+        y: 212
+        width: 863
+        height: 2015
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88993a4876cdec14f836f1437d5af459
-      internalID: -1775379189
+      spriteID: f513b87807db91e4d9ae9e239f225435
+      internalID: -1613053461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MAIN KARAKT\xC4R skakar spraycan 2_3"
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 212
+        width: 874
+        height: 2015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e731b56d2fc4c4e82d25d28d3db85e
+      internalID: 2046840812
       vertices: []
       indices: 
       edges: []
@@ -183,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Elev_1_animation_Sprite_sheet_0: -143432246
-      Elev_1_animation_Sprite_sheet_1: -1382862076
-      Elev_1_animation_Sprite_sheet_2: -1775379189
-      Elev_1_animation_Sprite_sheet_3: -1836882651
+      "MAIN KARAKT\xC4R skakar spraycan 2_0": -627263195
+      "MAIN KARAKT\xC4R skakar spraycan 2_1": -1976428889
+      "MAIN KARAKT\xC4R skakar spraycan 2_2": -1613053461
+      "MAIN KARAKT\xC4R skakar spraycan 2_3": 2046840812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1e17a1a84d618641b6e46721078e2be
+guid: 61c337f00da017844a27ae813c16582f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_0
+      name: "MAIN KARAKT\xC4R Sprayar Sprayf\xE4rg_0"
       rect:
         serializedVersion: 2
-        x: 56
-        y: 924
-        width: 1099
-        height: 1444
+        x: 0
+        y: 16
+        width: 842
+        height: 2066
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0168a3854bfa69b4dbfa9f6ffdc95d50
-      internalID: -143432246
+      spriteID: bff4b6bae09640f47a1e0e5a05678cf5
+      internalID: 1984423618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_1
+      name: "MAIN KARAKT\xC4R Sprayar Sprayf\xE4rg_1"
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 923
-        width: 1097
-        height: 1437
+        x: 871
+        y: 49
+        width: 779
+        height: 2052
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458420c9d3d70ef44a8a94b998486a6e
-      internalID: -1382862076
+      spriteID: 4544405f7ec593c47b7137f4d1c3ee7e
+      internalID: 559292077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_2
+      name: "MAIN KARAKT\xC4R Sprayar Sprayf\xE4rg_2"
       rect:
         serializedVersion: 2
-        x: 2375
-        y: 924
-        width: 1098
-        height: 1444
+        x: 1669
+        y: 39
+        width: 814
+        height: 2062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88993a4876cdec14f836f1437d5af459
-      internalID: -1775379189
+      spriteID: cdde1b53c84c41d4e881e0490713a2df
+      internalID: -1746270554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MAIN KARAKT\xC4R Sprayar Sprayf\xE4rg_3"
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 80
+        width: 1025
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba83c3f6074926a4e82a37a576b5929f
+      internalID: 677093342
       vertices: []
       indices: 
       edges: []
@@ -183,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Elev_1_animation_Sprite_sheet_0: -143432246
-      Elev_1_animation_Sprite_sheet_1: -1382862076
-      Elev_1_animation_Sprite_sheet_2: -1775379189
-      Elev_1_animation_Sprite_sheet_3: -1836882651
+      "MAIN KARAKT\xC4R Sprayar Sprayf\xE4rg_0": 1984423618
+      "MAIN KARAKT\xC4R Sprayar Sprayf\xE4rg_1": 559292077
+      "MAIN KARAKT\xC4R Sprayar Sprayf\xE4rg_2": -1746270554
+      "MAIN KARAKT\xC4R Sprayar Sprayf\xE4rg_3": 677093342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

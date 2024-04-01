@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1e17a1a84d618641b6e46721078e2be
+guid: 16525f299738a6c45a57721d91dbce57
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_0
+      name: "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_0"
       rect:
         serializedVersion: 2
-        x: 56
-        y: 924
-        width: 1099
-        height: 1444
+        x: 119
+        y: 246
+        width: 617
+        height: 2055
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0168a3854bfa69b4dbfa9f6ffdc95d50
-      internalID: -143432246
+      spriteID: eea712db6c468d94f90c4014a6c862fa
+      internalID: -789341143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_1
+      name: "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_1"
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 923
-        width: 1097
-        height: 1437
+        x: 1042
+        y: 253
+        width: 618
+        height: 1983
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458420c9d3d70ef44a8a94b998486a6e
-      internalID: -1382862076
+      spriteID: d01cb03c0b230594081df3cce3129abb
+      internalID: -162823233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_2
+      name: "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_2"
       rect:
         serializedVersion: 2
-        x: 2375
-        y: 924
-        width: 1098
-        height: 1444
+        x: 1895
+        y: 222
+        width: 624
+        height: 2077
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88993a4876cdec14f836f1437d5af459
-      internalID: -1775379189
+      spriteID: 7a9a6079bf826754ba13c617597aec31
+      internalID: 1215300794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_3"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 203
+        width: 617
+        height: 1973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb50c95b8aa9de41bc2b51191457bbc
+      internalID: 2064437463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_4"
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 247
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31aa6245c2a221542be9b487e706c7b1
+      internalID: -727028681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_5"
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 196
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928f2f16bdb6f974f99f65c1b20ef0b8
+      internalID: -1287644162
       vertices: []
       indices: 
       edges: []
@@ -183,10 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Elev_1_animation_Sprite_sheet_0: -143432246
-      Elev_1_animation_Sprite_sheet_1: -1382862076
-      Elev_1_animation_Sprite_sheet_2: -1775379189
-      Elev_1_animation_Sprite_sheet_3: -1836882651
+      "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_0": -789341143
+      "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_1": -162823233
+      "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_2": 1215300794
+      "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_3": 2064437463
+      "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_4": -727028681
+      "MAIN KARAKT\xC4R g\xE5 bak\xE5t (1)_5": -1287644162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

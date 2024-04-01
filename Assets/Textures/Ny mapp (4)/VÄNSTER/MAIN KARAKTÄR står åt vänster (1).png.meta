@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1e17a1a84d618641b6e46721078e2be
+guid: 0a48d5b140be3a74a961bdefd8c39165
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_0
+      name: "MAIN KARAKT\xC4R st\xE5r \xE5t v\xE4nster (1)_0"
       rect:
         serializedVersion: 2
-        x: 56
-        y: 924
-        width: 1099
-        height: 1444
+        x: 453
+        y: 234
+        width: 582
+        height: 1959
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0168a3854bfa69b4dbfa9f6ffdc95d50
-      internalID: -143432246
+      spriteID: 7a110e27279450749a239fcc8982dff0
+      internalID: -493535820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_1
+      name: "MAIN KARAKT\xC4R st\xE5r \xE5t v\xE4nster (1)_1"
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 923
-        width: 1097
-        height: 1437
+        x: 1462
+        y: 230
+        width: 582
+        height: 1965
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458420c9d3d70ef44a8a94b998486a6e
-      internalID: -1382862076
+      spriteID: 86ed97447e5764643a050ed3862306c7
+      internalID: -2143646552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elev_1_animation_Sprite_sheet_2
+      name: "MAIN KARAKT\xC4R st\xE5r \xE5t v\xE4nster (1)_2"
       rect:
         serializedVersion: 2
-        x: 2375
-        y: 924
-        width: 1098
-        height: 1444
+        x: 2517
+        y: 234
+        width: 589
+        height: 1974
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88993a4876cdec14f836f1437d5af459
-      internalID: -1775379189
+      spriteID: ba311bf6a3b177e48866de6e27004447
+      internalID: -1527256137
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Elev_1_animation_Sprite_sheet_0: -143432246
-      Elev_1_animation_Sprite_sheet_1: -1382862076
-      Elev_1_animation_Sprite_sheet_2: -1775379189
-      Elev_1_animation_Sprite_sheet_3: -1836882651
+      "MAIN KARAKT\xC4R st\xE5r \xE5t v\xE4nster (1)_0": -493535820
+      "MAIN KARAKT\xC4R st\xE5r \xE5t v\xE4nster (1)_1": -2143646552
+      "MAIN KARAKT\xC4R st\xE5r \xE5t v\xE4nster (1)_2": -1527256137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
