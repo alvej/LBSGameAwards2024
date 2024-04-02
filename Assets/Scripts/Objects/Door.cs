@@ -1,11 +1,16 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
+    public GameObject tranOut;
+
     public GameState gameState;
     private bool changedText = false;
     public string changeTo;
+
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +28,13 @@ public class Door : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("FUUDUD");
-                SceneManager.LoadScene(changeTo);
+
+                StartCoroutine(Transition());
+                tranOut.SetActive(true);
+
+                anim.SetBool("startTran", true);
+
+
                 gameState.infoText.text = "";
             }
 
@@ -45,4 +56,12 @@ public class Door : MonoBehaviour
         }
 
     }
+
+    private IEnumerator Transition()
+    {
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(changeTo);
+    }
+
 }

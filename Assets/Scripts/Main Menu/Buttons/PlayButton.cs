@@ -7,7 +7,10 @@ using UnityEngine.SceneManagement;
 public class PlayButton : MonoBehaviour
 {
 
+    public GameObject tranOut;
     public GameObject playButton;
+
+    public Animator anim;
 
     void Start()
     {
@@ -31,7 +34,21 @@ public class PlayButton : MonoBehaviour
 
     public void OnClick()
     {
-        SceneManager.LoadScene("Corridor");
+        StartCoroutine(Transition());
     }
 
+    private IEnumerator Transition()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        tranOut.SetActive(true);
+        anim.SetBool("startTran", true);
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene("Opening CutScene");
+        yield return new WaitForSeconds(0.25f);
+        anim.SetBool("startTran", false);
+        tranOut.SetActive(false);
+    }
 }
