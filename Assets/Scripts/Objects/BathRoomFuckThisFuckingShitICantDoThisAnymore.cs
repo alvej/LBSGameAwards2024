@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BathRoomFuckThisFuckingShitICantDoThisAnymore : MonoBehaviour
 {
@@ -41,6 +42,9 @@ public class BathRoomFuckThisFuckingShitICantDoThisAnymore : MonoBehaviour
 
         bathroom.GetComponent<SpriteRenderer>().sprite = grafittiBathroom;
         anim.SetBool("grafitiSpray", false);
+
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("LoseScreen");
     }
 }
 

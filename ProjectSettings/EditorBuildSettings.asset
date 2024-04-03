@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Toilet.unity
     guid: 6d4016c5a21cde449b67201a6f6b1256
   - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: a321c35f1ee95634483c521f2f441d29
+  - enabled: 1
     path: Assets/Scenes/TeacherCorridor.unity
     guid: dc113c5a8899c67409d910676b8d57a8
   m_configObjects: {}

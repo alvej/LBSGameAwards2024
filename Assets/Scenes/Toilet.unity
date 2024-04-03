@@ -422,7 +422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &778491273
 Animator:
   serializedVersion: 5
@@ -702,6 +702,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grafittiBathroom: {fileID: 21300000, guid: db947f2df42577d4c954e713050e52a0, type: 3}
   bathroom: {fileID: 2022023462}
+  movement: {fileID: 548161577}
+  anim: {fileID: 548161575}
 --- !u!1 &2087197995
 GameObject:
   m_ObjectHideFlags: 0
