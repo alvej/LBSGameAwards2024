@@ -12,6 +12,7 @@ public class GameState : MonoBehaviour
 
     public GameObject dialogueSquare;
     public TextMeshProUGUI teacherDialogueText;
+    public string lastScene = "MainMenu";
 
     // Start is called before the first frame update
     void Start()

@@ -14,6 +14,7 @@ public class Pen : MonoBehaviour
     public TextMeshProUGUI text;
 
     public Sprite mathbookColored;
+    private GameState gameState;
 
 
     int count = 0;
@@ -21,6 +22,8 @@ public class Pen : MonoBehaviour
 
     void Start()
     {
+        gameState = FindObjectOfType<GameState>();
+        gameState.lastScene = "MathBook";
         
     }
 

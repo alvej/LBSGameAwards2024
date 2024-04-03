@@ -8,6 +8,8 @@ public class CameraToggle : MonoBehaviour
     void Start()
     {
         movement = FindObjectOfType<Movement>();
+
+
     }
 
 

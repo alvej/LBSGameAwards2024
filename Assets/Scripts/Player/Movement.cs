@@ -9,7 +9,9 @@ public class Movement : MonoBehaviour
     public KeyCode rightKey = KeyCode.D;
     public KeyCode upKey = KeyCode.W;
     public KeyCode downKey = KeyCode.S;
-    public bool changeCamera = true;
+    public bool changeCamera = false;
+
+    public string lastScene = "MainMenu";
 
     public Animator anim;
 
