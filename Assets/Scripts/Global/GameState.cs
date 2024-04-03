@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameState : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class GameState : MonoBehaviour
     public GameObject dialogueSquare;
     public TextMeshProUGUI teacherDialogueText;
     public string lastScene = "MainMenu";
+    public float timeLeft = 120;
+    public bool timerEnabled = false;
+    private bool ranOut = false;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,26 @@ public class GameState : MonoBehaviour
     void Update()
     {
 
+        if (timeLeft > 0)
+        {
+            //Debug.Log(timerEnabled);
+            if (timerEnabled) {
+                //Debug.Log("Time left: " + timeLeft);
+                timeLeft -= Time.deltaTime; 
+            }
+        }
+        else
+        {
+            timeLeft = 0;
+        }
+
+        if (timeLeft == 0 && ranOut == false)
+        {
+            ranOut = true;
+            infoText.text = "You ran out of time!";
+            Debug.Log("You ran out of time!");
+            SceneManager.LoadScene("TeacherCorridor");
+        }
 
     }
 }

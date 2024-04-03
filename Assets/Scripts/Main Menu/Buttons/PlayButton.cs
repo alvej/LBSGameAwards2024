@@ -9,11 +9,13 @@ public class PlayButton : MonoBehaviour
 
     public GameObject tranOut;
     public GameObject playButton;
+    public GameState gameState;
 
     public Animator anim;
 
     void Start()
     {
+        gameState = FindObjectOfType<GameState>();
         LeanTween.scale(playButton, Vector3.one * 3.3f, 0.2f).setEase(LeanTweenType.easeOutQuad);
     }
 
@@ -34,6 +36,7 @@ public class PlayButton : MonoBehaviour
 
     public void OnClick()
     {
+        gameState.timerEnabled = true;
         StartCoroutine(Transition());
     }
 
