@@ -50,13 +50,10 @@ public class Bench : MonoBehaviour
             {
                 seated = true;
 
-                
                 StartCoroutine(Transition());
 
                 Debug.Log("ye");
 
-                dialogue.StartDialogue();
-                gameState.infoText.text = "";
 
                 //Transition anim så att man sätter sig ner.
             }
@@ -84,16 +81,17 @@ public class Bench : MonoBehaviour
 
     private IEnumerator Transition()
     {
-        animIn.SetBool("deskIn", true);
+        animOut.SetBool("deskOut", true);
+        tranOut.SetActive(true);
         yield return new WaitForSeconds(1);
-        animIn.SetBool("deskIn", false);
-        tranIn.SetActive(false);
+        animOut.SetBool("deskOut", false);
+        tranOut.SetActive(false);
 
         player.SetActive(false);
         playerSeated.SetActive(true);
 
-        tranOut.SetActive(true);
-        animOut.SetBool("deskOut", true);
+        animIn.SetBool("deskIn", true);
+        tranIn.SetActive(true);
         yield return new WaitForSeconds(1);
         
 
