@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
@@ -15,6 +16,14 @@ public class Bench : MonoBehaviour
     public DialogueTeacher1 check;
     public DialogueTeacher2 dialogue;
     public Movement movement;
+
+    public Animator animIn;
+    public Animator animOut;
+    public GameObject tranOut;
+    public GameObject tranIn;
+
+    public GameObject player;
+    public GameObject playerSeated;
 
     void Awake()
     {
@@ -40,6 +49,10 @@ public class Bench : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && seated == false)
             {
                 seated = true;
+
+                
+                StartCoroutine(Transition());
+
                 Debug.Log("ye");
 
                 dialogue.StartDialogue();
@@ -67,5 +80,24 @@ public class Bench : MonoBehaviour
         {
             movement.speed = 5;
         }
+    }
+
+    private IEnumerator Transition()
+    {
+        animIn.SetBool("deskIn", true);
+        yield return new WaitForSeconds(1);
+        animIn.SetBool("deskIn", false);
+        tranIn.SetActive(false);
+
+        player.SetActive(false);
+        playerSeated.SetActive(true);
+
+        tranOut.SetActive(true);
+        animOut.SetBool("deskOut", true);
+        yield return new WaitForSeconds(1);
+        
+
+        dialogue.StartDialogue();
+        gameState.infoText.text = "";
     }
 }
