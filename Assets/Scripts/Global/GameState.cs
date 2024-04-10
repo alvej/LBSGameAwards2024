@@ -12,6 +12,8 @@ public class GameState : MonoBehaviour
     public TextMeshProUGUI infoText;
     public TextMeshProUGUI timeText;
 
+    public TextMeshProUGUI taskText;
+
     public GameObject dialogueSquare;
     public TextMeshProUGUI teacherDialogueText;
     public string lastScene = "MainMenu";
