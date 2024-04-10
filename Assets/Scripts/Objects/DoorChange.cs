@@ -17,6 +17,8 @@ public class DoorChange : MonoBehaviour
 
         if(gameState.lastScene == "MathBook")
         {
+            gameState.taskText.text = "Task: Go to the bathroom";
+
             if(unlockDoors == false) {
                 doorOpen.gameObject.SetActive(false);
                 doorClosed.gameObject.SetActive(true);
@@ -30,6 +32,8 @@ public class DoorChange : MonoBehaviour
         }
         else
         {
+
+            gameState.taskText.text = "Task: Go to class";
 
             if (unlockDoors == false)
             {
