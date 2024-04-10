@@ -921,6 +921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoText: {fileID: 1372749958}
+  timeText: {fileID: 38814521}
   dialogueSquare: {fileID: 2003150297}
   teacherDialogueText: {fileID: 891354811}
   lastScene: MainMenu
