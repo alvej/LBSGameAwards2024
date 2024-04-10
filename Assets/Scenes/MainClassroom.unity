@@ -449,6 +449,7 @@ MonoBehaviour:
   upKey: 119
   downKey: 115
   changeCamera: 1
+  lastScene: MainMenu
   anim: {fileID: 138699750}
 --- !u!50 &138699753
 Rigidbody2D:
