@@ -43,10 +43,9 @@ public class Pen : MonoBehaviour
             count++;
             Debug.Log("Math book damaged: " + count + " times.");
             text.text = "Score: " + count;
-            Instantiate(drawPrefab, pen.position, Quaternion.identity, transform.parent);
-
+            GameObject obj =  Instantiate(drawPrefab, pen.position, Quaternion.identity, transform.parent);
             if(count == 20) {
-                transform.GetComponent<Image>().sprite = mathbookColored;
+                transform.GetComponent<SpriteRenderer>().sprite = mathbookColored;
                 StartCoroutine(ChangeScene());
             }
             

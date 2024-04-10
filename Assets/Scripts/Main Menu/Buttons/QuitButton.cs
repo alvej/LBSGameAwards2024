@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class QuitButton : MonoBehaviour
 {
@@ -18,7 +20,8 @@ public class QuitButton : MonoBehaviour
     public void OnPointerEnter()
     {
         LeanTween.cancel(quitButton);
-      
+
+
         LeanTween.scale(quitButton, Vector3.one * 3.7f, 0.35f).setEase(LeanTweenType.easeOutQuad);
      
        
@@ -27,6 +30,7 @@ public class QuitButton : MonoBehaviour
     public void OnPointerExit()
     {
         LeanTween.cancel(quitButton);
+
 
         LeanTween.scale(quitButton, Vector3.one * 3.3f, 0.35f).setEase(LeanTweenType.easeOutQuad);
     }
