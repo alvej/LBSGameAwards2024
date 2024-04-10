@@ -10,6 +10,7 @@ public class GameState : MonoBehaviour
 
 
     public TextMeshProUGUI infoText;
+    public TextMeshProUGUI timeText;
 
     public GameObject dialogueSquare;
     public TextMeshProUGUI teacherDialogueText;
@@ -36,7 +37,8 @@ public class GameState : MonoBehaviour
             //Debug.Log(timerEnabled);
             if (timerEnabled) {
                 //Debug.Log("Time left: " + timeLeft);
-                timeLeft -= Time.deltaTime; 
+                timeLeft -= Time.deltaTime;
+                timeText.text = "Time left: " + Math.Round(timeLeft, 0);
             }
         }
         else
