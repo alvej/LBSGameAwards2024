@@ -39,11 +39,10 @@ public class Pen : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
-
             count++;
             Debug.Log("Math book damaged: " + count + " times.");
-            text.text = "Poke 20 Holes Through The Book: " + count;
-            GameObject obj =  Instantiate(drawPrefab, pen.position, Quaternion.identity, transform.parent);
+            text.text = "Score: " + count;
+            GameObject obj =  Instantiate(drawPrefab, pen.position, Quaternion.identity, pen.parent);
             if(count == 20) {
                 transform.GetComponent<SpriteRenderer>().sprite = mathbookColored;
                 StartCoroutine(ChangeScene());
