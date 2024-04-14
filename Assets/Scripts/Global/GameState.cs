@@ -10,8 +10,8 @@ public class GameState : MonoBehaviour
 
 
     public TextMeshProUGUI infoText;
-    public TextMeshProUGUI timeText;
 
+    public TextMeshProUGUI timeText;
     public TextMeshProUGUI taskText;
 
     public GameObject dialogueSquare;
@@ -24,9 +24,11 @@ public class GameState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timeText.text = "";
+        taskText.text = "";
+
         DontDestroyOnLoad(gameObject);
         infoText.text = "";
-
 
     }
 
@@ -37,10 +39,11 @@ public class GameState : MonoBehaviour
         if (timeLeft > 0)
         {
             //Debug.Log(timerEnabled);
-            if (timerEnabled) {
+            if (timerEnabled) 
+            {
                 //Debug.Log("Time left: " + timeLeft);
                 timeLeft -= Time.deltaTime;
-                timeText.text = "Time left: " + Math.Round(timeLeft, 0);
+                timeText.text = "Time Until You Die Of Boredom: " + Math.Round(timeLeft, 0);
             }
         }
         else

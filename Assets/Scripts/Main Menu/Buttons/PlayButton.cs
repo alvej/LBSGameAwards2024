@@ -38,7 +38,6 @@ public class PlayButton : MonoBehaviour
 
     public void OnClick()
     {
-        gameState.timerEnabled = true;
         StartCoroutine(Transition());
     }
 
